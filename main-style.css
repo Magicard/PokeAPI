@@ -1,0 +1,14 @@
+.box{
+    background-color:#E74C3C;
+    padding: 0%;
+}
+.image{
+    width: 100%;
+}
+
+.button{
+    font-family: 'Robot', sans-serif;
+    margin: 10px;
+    font-size: 125%;
+}
+
