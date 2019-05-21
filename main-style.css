@@ -1,4 +1,4 @@
-.box{
+#navbar{
     background-color:#E74C3C;
     padding: 0%;
 }
@@ -12,3 +12,16 @@
     font-size: 125%;
 }
 
+.body{
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    width:25%;
+    margin: 2%;
+}
+
+#Image{
+    transform: scale(2.6)
+}
