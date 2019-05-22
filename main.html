@@ -13,41 +13,36 @@
     
   <body>
     <div  class="top">
-      <div id="navbar" class="box">
-        <nav class="level">
-          <button class="button is-white is-rounded is-white is-fullwidth">All Pokemon</button>
-          <button class="button is-white is-rounded is-white is-fullwidth">Favorite Pokemon</button>
-          <figure class="image is-720x240"> <img src="pokelogo.png"></figure>
-          <button class="button is-white is-rounded is-white is-fullwidth">Compare Pokemon</button>
-          <button class="button is-white is-rounded is-white is-fullwidth">More Info</button>
+      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="pokelogo2.png" id="logo">
+            </a>
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item">
+                Home
+              </a>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                Pokemon
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    All Pokemon
+                  </a>
+                  <a class="navbar-item">
+                    Favorite Pokemon
+                  </a>
+                  <a class="navbar-item">
+                    Compare Pokemon
+                  </a>
+                </div>
+              </div>
+            </div>     
+          </div>
         </nav>
       </div>
-    </div> 
-    
-    <div class="body">
-        <div class="card">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" id="Image">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">John Smith</p>
-              </div>
-            </div>
-            <div class="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-              <a href="#">#css</a> <a href="#">#responsive</a>
-            </div>
-          </div>
-        </div>
-    </div>
-
-
-          
-  </body>
-    
+    </body>
 </html>
