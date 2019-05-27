@@ -1,0 +1,78 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+//var goes here
+
+@import "~bulma/bulma";
+
+html,body{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+}
+
+#logo{
+    transform: scale(3);
+}
+
+#navbar{
+    margin-left: 1%;
+}
+
+.bg{
+    background-color:#1e1e1e;
+    height: 1000px;
+}
+
+.square{
+    margin: 200px;
+    width: 20%;
+    height: 20%;
+    background-color: aqua;
+}
+
+.pokemon-card{
+    margin: 2%;
+    background-color: #3c5ba6;
+    border-radius: 10px 10px 10px 10px;
+    width: 12.5%;
+    height: 20%;
+    box-shadow: 0px 0px 17.5px -5px rgba(255,221,87,1);
+ 
+}
+
+.header{
+    height: 40%;
+    background-color: #ffdd57;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#pokepic{
+    position: relative;
+    top:-7.5px;
+    transform: scale(1.4);
+}
+
+.img-breaker{
+    background-color: #1e1e1e;
+    width: 1px;
+    height: 50px;
+    position: relative;
+    top: -100%;
+    left: 37.5%;
+}
+
+.name{
+    position: relative;
+    top: -150%;
+    left: 42.5%;
+    width: 50%;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#hp{
+    margin: 2%;
+    width:60%;
+}
