@@ -12,22 +12,30 @@
     </head>
     <body>
         <div class="bg">
-            <div  class="top">
+            <div class="top">
                 <nav class="navbar" role="navigation" aria-label="main navigation">
-                            <div class="navbar-brand">
-                            <a class="navbar-item" href="https://bulma.io">
-                            <img src="ball.png" id="logo">
-                            </a>
-                            </div>
-                  <div id="navbar" class="navbar-menu">
+                  <div class="navbar-brand">
+                    <a class="navbar-item" href="https://bulma.io">
+                      <img src="ball.png" id= "logo">
+                    </a>
+                    <a role="button" class="navbar-burger burger is-hoverable" aria-label="menu" aria-expanded="false" data-target="navbarA" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                    </a>
+                  </div>
+
+                  <div id="navbarA" class="navbar-menu">
                     <div class="navbar-start">
                       <a class="navbar-item">
                         Home
                       </a>
-                      <div class="navbar-item has-dropdown is-hoverable" id="dropdown">
+
+                      <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">
-                        Pokemon
+                          Pokemon
                         </a>
+
                         <div class="navbar-dropdown">
                           <a class="navbar-item">
                             All Pokemon
@@ -40,7 +48,7 @@
                           </a>
                         </div>
                       </div>
-                    </div>     
+                    </div>
                   </div>
                 </nav>
             </div>
@@ -56,6 +64,91 @@
                               </div>
                               <div class="media-content">
                                 <div class="title is-3">John Smith</div>
+                              </div>
+                                <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
+                            </div>
+
+                            <div class="content">
+                                lorem
+                                ipsum
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                              <div class="media-left">
+                                <figure class="image is-48x48">
+                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
+                                </figure>
+                              </div>
+                              <div class="media-content">
+                                <div class="title is-3">John Smith</div>
+                              </div>
+                                <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
+                            </div>
+
+                            <div class="content">
+                                lorem
+                                ipsum
+                            </div>
+                          </div>
+                    </div></div>
+            <div class="column"><div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                              <div class="media-left">
+                                <figure class="image is-48x48">
+                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
+                                </figure>
+                              </div>
+                              <div class="media-content">
+                                <div class="title is-3">John Smith</div>
+                              </div>
+                                <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
+                            </div>
+
+                            <div class="content">
+                                lorem
+                                ipsum
+                            </div>
+                          </div>
+                    </div></div>
+            <div class="column"><div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                              <div class="media-left">
+                                <figure class="image is-48x48">
+                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
+                                </figure>
+                              </div>
+                              <div class="media-content">
+                                <div class="title is-3">John Smith</div>
+                              </div>
+                                <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
+                            </div>
+
+                            <div class="content">
+                                lorem
+                                ipsum
+                            </div>
+                          </div>
+                    </div></div>
+        </div>
+                <div class="columns">
+            <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                              <div class="media-left">
+                                <figure class="image is-48x48">
+                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
+                                </figure>
+                              </div>
+                              <div class="media-content">
+                                <div class="title is-3">Bulbasaur</div>
                               </div>
                                 <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
                             </div>

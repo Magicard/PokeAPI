@@ -23,7 +23,7 @@ html,body{
     transform: scale(3);
 }
 
-#navbar{
+.navbar-start{
     margin-left: 1%;
 }
 
@@ -45,6 +45,9 @@ html,body{
     transform: scale(2);
 }
 
+.column{
+    margin-top: 3%;
+}
 
 #favourite{
     position: relative;

@@ -9202,7 +9202,7 @@ html, body {
           transform: scale(3);
 }
 
-#navbar {
+.navbar-start {
   margin-left: 1%;
 }
 
@@ -9223,6 +9223,10 @@ html, body {
   top: -5px;
   -webkit-transform: scale(2);
           transform: scale(2);
+}
+
+.column {
+  margin-top: 3%;
 }
 
 #favourite {
