@@ -5316,7 +5316,7 @@ a.list-item {
 }
 
 .navbar {
-  background-color: white;
+  background-color: #ffcb05;
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
@@ -6094,7 +6094,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
 
   .navbar-menu {
-    background-color: white;
+    background-color: #ffcb05;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0;
   }
@@ -9218,47 +9218,14 @@ html, body {
   background-color: aqua;
 }
 
-.pokemon-card {
-  margin: 2%;
-  background-color: #3c5ba6;
-  border-radius: 10px 10px 10px 10px;
-  width: 12.5%;
-  height: 20%;
-  box-shadow: 0px 0px 17.5px -5px #ffdd57;
-}
-
-.header {
-  height: 40%;
-  background-color: #ffdd57;
-  border-radius: 10px 10px 10px 10px;
-}
-
 #pokepic {
   position: relative;
-  top: -7.5px;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  top: -5px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
-.img-breaker {
-  background-color: #1e1e1e;
-  width: 1px;
-  height: 50px;
+#favourite {
   position: relative;
-  top: -100%;
-  left: 37.5%;
-}
-
-.name {
-  position: relative;
-  top: -150%;
-  left: 42.5%;
-  width: 50%;
-  font-family: "Roboto";
-  font-size: 20px;
-}
-
-#hp {
-  margin: 2%;
-  width: 60%;
+  top: 7.5px;
 }

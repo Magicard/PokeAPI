@@ -2,6 +2,13 @@
 @import "~bulma/sass/utilities/functions";
 
 //var goes here
+$my-lightblue: #2a75bb;
+$my-darkblue: #3c5aa6;
+$my-lightyellow:  #ffcb05; 
+$my-darkyellow: #c7a008;
+$my-black: #1e1e1e;
+
+$navbar-background-color: $my-lightyellow;
 
 @import "~bulma/bulma";
 
@@ -21,7 +28,7 @@ html,body{
 }
 
 .bg{
-    background-color:#1e1e1e;
+    background-color: $my-black;
     height: 1000px;
 }
 
@@ -32,47 +39,15 @@ html,body{
     background-color: aqua;
 }
 
-.pokemon-card{
-    margin: 2%;
-    background-color: #3c5ba6;
-    border-radius: 10px 10px 10px 10px;
-    width: 12.5%;
-    height: 20%;
-    box-shadow: 0px 0px 17.5px -5px rgba(255,221,87,1);
- 
-}
-
-.header{
-    height: 40%;
-    background-color: #ffdd57;
-    border-radius: 10px 10px 10px 10px;
-}
-
 #pokepic{
     position: relative;
-    top:-7.5px;
-    transform: scale(1.4);
+    top:-5px;
+    transform: scale(2);
 }
 
-.img-breaker{
-    background-color: #1e1e1e;
-    width: 1px;
-    height: 50px;
+
+#favourite{
     position: relative;
-    top: -100%;
-    left: 37.5%;
+    top: +7.5px;
 }
 
-.name{
-    position: relative;
-    top: -150%;
-    left: 42.5%;
-    width: 50%;
-    font-family: 'Roboto';
-    font-size: 20px;
-}
-
-#hp{
-    margin: 2%;
-    width:60%;
-}
