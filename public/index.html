@@ -6,15 +6,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
       <script src="javascript.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel = "stylesheet"
     type = "text/css"
     href = "main-style.css" />
     </head>
-    <body>
-            <div class="top">
+    <body id="yea">
+        <div class="top">
                 <nav class="navbar" role="navigation" aria-label="main navigation">
                   <div class="navbar-brand">
-                    <a class="navbar-item" href="https://bulma.io">
+                    <a class="navbar-item" >
                       <img src="ball.png" id= "logo">
                     </a>
                     <a role="button" class="navbar-burger burger is-hoverable" aria-label="menu" aria-expanded="false" data-target="navbarA" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
@@ -41,8 +42,8 @@
                           </a>
                           <a class="navbar-item">
                             Favorite Pokemon
-                          </a>
-                          <a class="navbar-item">
+                          </a
+                          <a class="navbar-item
                             Compare Pokemon
                           </a>
                         </div>
@@ -52,213 +53,6 @@
                 </nav>
             
             </div>
-        <div class="columns">
-            <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="card-header">
-                              <div class="card-header-icon">
-                                <figure class="image is-48x48">
-                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
-                                </figure>
-                              </div>
-                              <div class="card-header-title">
-                                <div class="title is-3">Bulbasaur</div>
-                              </div>
-                                <a class="button is-centered is-link" onclick="changeImage()" id="favourite">Favourite</a>
-                            </div>
-                            <hr class="navbar-divider">
-                            <div class="content">
-                                <div class= "box" id="container">
-                                    <div class= "box" id="HP">
-                                     HP: 
-                                    56 / 256
-                                    </div>
-                                    <progress class="progress is-big is-danger" value="56" max="256"></progress>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class= "box" id="container">
-                                    <div class= "box" id="SPD">
-                                     HP: 
-                                    56 / 256
-                                    </div>
-                                    <progress class="progress is-big is-success" value="15" max="100">15%</progress>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class= "box" id="container">
-                                    <div class= "box" id="DEF">
-                                     HP: 
-                                    56 / 256
-                                    </div>
-                                    <progress class="progress is-big is-info" value="15" max="100">15%</progress>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <div class= "box" id="container">
-                                    <div class= "box" id="ATK">
-                                     HP: 
-                                    56 / 256
-                                    </div>
-                                    <progress class="progress is-big is-warning" value="15" max="100">15%</progress>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="card-header-icon">
-                              <div class="media-left">
-                                <figure class="image is-48x48">
-                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
-                                </figure>
-                              </div>
-                              <div class="card-header-title">
-                                <div class="title is-3">Bulbasaur</div>
-                              </div>
-                                <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
-                            </div>
-
-                            <div class="content">
-                                lorem
-                                ipsum
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="card-header-icon">
-                              <div class="media-left">
-                                <figure class="image is-48x48">
-                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
-                                </figure>
-                              </div>
-                              <div class="card-header-title">
-                                <div class="title is-3">Bulbasaur</div>
-                              </div>
-                                <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
-                            </div>
-
-                            <div class="content">
-                                lorem
-                                ipsum
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="card-header-icon">
-                              <div class="media-left">
-                                <figure class="image is-48x48">
-                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
-                                </figure>
-                              </div>
-                              <div class="card-header-title">
-                                <div class="title is-3">Bulbasaur</div>
-                              </div>
-                                <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
-                            </div>
-
-                            <div class="content">
-                                lorem
-                                ipsum
-                            </div>
-                          </div>
-                    </div>
-                </div>
-        </div>
-        <div class="columns">
-            <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                              <div class="media-left">
-                                <figure class="image is-48x48">
-                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
-                                </figure>
-                              </div>
-                              <div class="media-content">
-                                <div class="title is-3">Bulbasaur</div>
-                              </div>
-                                <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
-                            </div>
-
-                            <div class="content">
-                                lorem
-                                ipsum
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                              <div class="media-left">
-                                <figure class="image is-48x48">
-                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
-                                </figure>
-                              </div>
-                              <div class="media-content">
-                                <div class="title is-3">John Smith</div>
-                              </div>
-                                <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
-                            </div>
-
-                            <div class="content">
-                                lorem
-                                ipsum
-                            </div>
-                          </div>
-                    </div></div>
-            <div class="column"><div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                              <div class="media-left">
-                                <figure class="image is-48x48">
-                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
-                                </figure>
-                              </div>
-                              <div class="media-content">
-                                <div class="title is-3">John Smith</div>
-                              </div>
-                                <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
-                            </div>
-
-                            <div class="content">
-                                lorem
-                                ipsum
-                            </div>
-                          </div>
-                    </div></div>
-            <div class="column"><div class="card">
-                        <div class="card-content">
-                            <div class="media">
-                              <div class="media-left">
-                                <figure class="image is-48x48">
-                                  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" id="pokepic">
-                                </figure>
-                              </div>
-                              <div class="media-content">
-                                <div class="title is-3">John Smith</div>
-                              </div>
-                                <div class="button is-small is-centered" onclick="changeImage()" id="favourite">Favourite</div>
-                            </div>
-
-                            <div class="content">
-                                lorem
-                                ipsum
-                            </div>
-                          </div>
-                    </div></div>
-        
-        </div>
+        <script src="javascript.js"></script>
     </body>
 </html>
