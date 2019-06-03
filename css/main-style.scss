@@ -126,10 +126,11 @@ html,body{
     margin-bottom: 7px;
 }
 
-.navbar-divider{
-    height: 5px;
+.blueLine{
+    height: 15px;
     width: 100%;
     margin-top: -25px;
+    background-color: lighten($my-lightblue,10%);
 }
 
 .line{
@@ -154,4 +155,10 @@ html,body{
     margin-top: 10px;
     margin-bottom: 10px;
     height: 40px;
+}
+
+.shadow{
+    position: absolute;
+    margin-top: 30px;
+    width: 50px;
 }
