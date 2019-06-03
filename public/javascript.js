@@ -1,5 +1,8 @@
+
 var maxPokemon=807; 
 //change var if the number updates
+var columnCounter=1;
+
 main()
 
 function main(){ 
@@ -20,12 +23,12 @@ function createPokemonCardDivider(j){
         newColumn= document.createElement("div")
         newColumn.className= 'columns'
         newColumn.id= "columns-"+ j.toString();
-        render= document.getElementById('yea');
+        render= document.getElementById("yea")
         render.appendChild(newColumn)
 }
 
-
-function createPokemonCard(i){ 
+function createPokemonCard(i){
+    
     //make image
     pokePic = document.createElement("img")
     pokePic.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + i.toString() + ".png"; // get image for each pokemon
@@ -51,6 +54,7 @@ function createPokemonCard(i){
     favButton= document.createElement('a')
     favButton.className= 'button is-link is-small';
     favButton.id= 'favourite';
+
     favButton.textContent= 'Favourite'
 
     cardHeaderTitle= document.createElement('div')
@@ -205,6 +209,10 @@ function createPokemonCard(i){
 
     render= document.getElementById('yea')
     render.appendChild(card)
+    
+    
+
+
     }
 
 //make first letter capital
@@ -212,7 +220,6 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-//axios to add info to the progress bars and more info to the pokemon
 /*for (i in maxPokemon){
             axios.get('https://pokeapi.co/api/v2/pokemon/'+ i)
             .then((response)=>{
@@ -228,7 +235,7 @@ function capitalizeFirstLetter(string) {
 
 }*/
 
-
+//get link for pokemon names
 link = "https://pokeapi.co/api/v2/pokemon?offset=0&limit="+ maxPokemon.toString();
 data = new XMLHttpRequest();
 data.open('GET',link,true)
@@ -238,7 +245,7 @@ data.onreadystatechange = function(){
     if (data.readyState === 4 && data.status ===200 ){
     dataObj = JSON.parse(data.responseText);
         for( i in dataObj.results){
-            //i represents each pokemon in the website
+            //i reprensets each pokemon in the website
             textObj = document.getElementsByClassName("title")
             textObj[i].innerHTML = capitalizeFirstLetter(dataObj.results[i].name);
             //set name of pokemon
